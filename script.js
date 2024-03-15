@@ -10,7 +10,11 @@ function handleSubmit() {
   }
 
   // 定義五行元素及其生剋關係
-  const elements = ['水', '土', '木', '木', '土', '金', '金', '土', '火', '土']; // 定義五行元素
+  const elements = ['<span style="color:brown;">土</span>', '<span style="color:blue;">水</span>', 
+                    '<span style="color:brown;">土</span>', '<span style="color:green;">木</span>',
+                     '<span style="color:green;">木</span>', '<span style="color:brown;">土</span>',
+                      '<span style="color:gold;">金</span>', '<span style="color:gold;">金</span>',
+                       '<span style="color:brown;">土</span>', '<span style="color:red;">火</span>']; // 定義五行元素
   const position = ['','','健康', '財帛', '子女', '姻緣', '外緣', '命宮']; // 定義宮位
   const interactions = { // 定義生剋關係
     '木火': '-生>',
@@ -44,21 +48,25 @@ function handleSubmit() {
   const lastEightDigits = phoneNumber.slice(-8);
 
   // 計算生剋關係
-  let numbersText = '';
+  let numbersText = '<tr>';
   let elementsText = '<tr>';
+  let interactionsText = '<tr><td></td>';
 
   for (let i = 0; i < lastEightDigits.length; i++) {
     numbersText += `<td>${parseInt(lastEightDigits[i])}</td>`;
 
     const Digit_element = elements[parseInt(lastEightDigits[i])];
     elementsText += `<td>${Digit_element}</td>`;
-
+    
     // 檢查是否為最後一個索引，不是的話加上空白的 <td></td>
-    if (i !== phoneNumber.length - 1) {
+    if (i !== lastEightDigits.length - 1) {
       numbersText += `<td></td>`;
-      elementsText += `<td></td>`;
+      const interactions_element = interactions[elements[parseInt(lastEightDigits[i])] + elements[parseInt(lastEightDigits[i+1])]];
+      elementsText += `<td>${interactions_element}</td>`;
+    }
   }
-  }
+
+  numbersText += '</tr>';
   elementsText += '</tr>';
 
   // 顯示生剋關係表格
@@ -87,6 +95,7 @@ function handleSubmit() {
       </tr>
       ${numbersText}
       ${elementsText}
+      ${interactionsText}
     </table>
   `;
 
