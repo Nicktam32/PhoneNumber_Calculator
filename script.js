@@ -1,3 +1,9 @@
+document.getElementById('phoneNumber').addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+      handleSubmit();
+  }
+});
+
 // 提交表單時的處理函數
 function handleSubmit() {
   // 獲取輸入框中的值
@@ -9,14 +15,17 @@ function handleSubmit() {
     return;
   }
 
-  // 定義五行元素及其生剋關係
+  // 定義五行元素
   const elements = ['<span style="color:brown;">土</span>', '<span style="color:blue;">水</span>', 
                     '<span style="color:brown;">土</span>', '<span style="color:green;">木</span>',
                      '<span style="color:green;">木</span>', '<span style="color:brown;">土</span>',
                       '<span style="color:gold;">金</span>', '<span style="color:gold;">金</span>',
-                       '<span style="color:brown;">土</span>', '<span style="color:red;">火</span>']; // 定義五行元素
-  const position = ['','','健康', '財帛', '子女', '姻緣', '外緣', '命宮']; // 定義宮位
-  const interactions = { // 定義生剋關係
+                       '<span style="color:brown;">土</span>', '<span style="color:red;">火</span>']; 
+  const cleanElements = elements.map(element => element.replace(/(<([^>]+)>)/gi, ''));
+  // 定義宮位
+  const position = ['','','健康', '財帛', '子女', '姻緣', '外緣', '命宮']; 
+  // 定義生剋關係
+  const interactions = {
     '木火': '-生>',
     '火土': '-生>',
     '土金': '-生>',
@@ -45,24 +54,36 @@ function handleSubmit() {
   };
 
   // 取得最後8個數字
-  const lastEightDigits = phoneNumber.slice(-8);
+  let lastEightDigits = phoneNumber.slice(-8);
+
+  // 補齊不足8位的情況
+  while (lastEightDigits.length < 8) {
+    lastEightDigits = ' ' + lastEightDigits; // 在前面添加空白，直到总共有8位数字
+  }
 
   // 計算生剋關係
   let numbersText = '<tr>';
   let elementsText = '<tr>';
-  let interactionsText = '<tr><td></td>';
 
   for (let i = 0; i < lastEightDigits.length; i++) {
-    numbersText += `<td>${parseInt(lastEightDigits[i])}</td>`;
+    const digit = parseInt(lastEightDigits[i]);
+    const parsedDigit = isNaN(digit) ? ' ' : digit; // 若為 NaN，則以空白取代
 
-    const Digit_element = elements[parseInt(lastEightDigits[i])];
-    elementsText += `<td>${Digit_element}</td>`;
-    
-    // 檢查是否為最後一個索引，不是的話加上空白的 <td></td>
+    numbersText += `<td>${parsedDigit}</td>`;
+
+    const digit_element = elements[parsedDigit];
+    const parsedElement = digit_element ? digit_element : ' '; // 若為 undefined，則以空白取代
+    elementsText += `<td>${parsedElement}</td>`;
+
+    // 檢查是否為最後一個索引，如果不是則加上空白的 <td></td>
     if (i !== lastEightDigits.length - 1) {
       numbersText += `<td></td>`;
-      const interactions_element = interactions[elements[parseInt(lastEightDigits[i])] + elements[parseInt(lastEightDigits[i+1])]];
-      elementsText += `<td>${interactions_element}</td>`;
+      // 檢查下一個索引是否超出範圍，如果沒有則計算 interactions_element
+      if (i + 1 < lastEightDigits.length) {
+        const cross_interactions = cleanElements[parsedDigit] + cleanElements[parseInt(lastEightDigits[i + 1])];
+        const interactions_element = interactions[cross_interactions] || ' '; // 若為 undefined，則以空白取代
+        elementsText += `<td>${interactions_element}</td>`;
+      }
     }
   }
 
@@ -95,7 +116,6 @@ function handleSubmit() {
       </tr>
       ${numbersText}
       ${elementsText}
-      ${interactionsText}
     </table>
   `;
 
@@ -105,4 +125,4 @@ function handleSubmit() {
     // 為了簡單起見，我們只檢查輸入是否為非空
     return phoneNumber.trim() !== ''; // 檢查是否為非空
   }
-}
+  }

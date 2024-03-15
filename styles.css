@@ -1,10 +1,26 @@
+/* 預設表格樣式 */
 table {
-  width: 100%;
-  border-collapse: collapse;
+  width: 50%;
+  border-collapse: collapse; /* 启用表格边框合并 */
 }
 
-table th, table td {
+table th,
+table td {
   text-align: center;
   padding: 8px;
   border: none; /* 移除表格的邊框線 */
+}
+
+/* Odd-numbered columns */
+table th:nth-child(odd),
+table td:nth-child(odd) {
+  width: 10px; /* Set the width of odd-numbered columns */
+  /* border: 1px solid black;  /* Add border to odd-numbered columns */
+}
+
+/* Even-numbered columns */
+table th:nth-child(even),
+table td:nth-child(even) {
+  width: 3px; /* Set the width of even-numbered columns */
+  /* border: 1px solid black;  /* Add border to even-numbered columns */
 }
