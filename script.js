@@ -96,9 +96,10 @@ function handleSubmit() {
     <br>
     <hr>
     <p>您的電話號碼是：${phoneNumber}</p>
-    <div class="table-responsive"> <!-- 添加 Bootstrap 的响应式表格容器 -->
-      <table class="table table-bordered table-responsive-sm"> <!-- 使用 Bootstrap 表格类名 -->
-        <thead class="thead-dark"> <!-- 使用 Bootstrap 表格头部类名 -->
+    <!-- HTML structure with Bootstrap classes -->
+    <div class="table-responsive"> 
+      <table class="table table-bordered table-responsive-sm text-center"> 
+        <thead class="thead-dark"> 
           <tr>
             <th>　　</th>
             <th></th>

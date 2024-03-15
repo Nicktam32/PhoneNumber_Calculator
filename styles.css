@@ -1,12 +1,11 @@
-/* 預設表格樣式 */
-table {
-  width: 50%;
-  border-collapse: collapse; /* 启用表格边框合并 */
+/* Custom CSS to hide table lines and borders */
+.table {
+  border-collapse: collapse;
+  border: none;
 }
 
-table th,
-table td {
-  text-align: center;
-  padding: 8px;
-  border: none; /* 移除表格的邊框線 */
+.table td,
+.table th {
+  border: none;
+  vertical-align: middle;
 }
