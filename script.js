@@ -127,8 +127,10 @@ function handleSubmit() {
 
   // 在窗口大小变化时，重新计算表格宽度
   window.addEventListener('resize', function() {
-    const table = document.querySelector('.table-responsive');
-    table.style.width = window.innerWidth;
+    const screenWidth = window.innerWidth;
+    const table = document.querySelector('.table-responsive-sm');
+    const tableWidth = screenWidth <= 646 ? '100%' : '646px'; // 根据屏幕宽度设置表格宽度
+    table.style.width = tableWidth;
   });
 
   // 驗證電話號碼是否有效的函數
@@ -137,4 +139,5 @@ function handleSubmit() {
     // 為了簡單起見，我們只檢查輸入是否為非空
     return phoneNumber.trim() !== ''; // 檢查是否為非空
   }
+
 }
