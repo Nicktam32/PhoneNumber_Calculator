@@ -96,28 +96,40 @@ function handleSubmit() {
     <br>
     <hr>
     <p>您的電話號碼是：${phoneNumber}</p>
-    <table>
-      <tr>
-        <th>　　</th>
-        <th></th>
-        <th>　　</th>
-        <th></th>
-        <th>健康</th>
-        <th></th>
-        <th>財帛</th>
-        <th></th>
-        <th>子女</th>
-        <th></th>
-        <th>姻緣</th>
-        <th></th>
-        <th>外緣</th>
-        <th></th>
-        <th>命宮</th>
-      </tr>
-      ${numbersText}
-      ${elementsText}
-    </table>
+    <div class="table-responsive"> <!-- 添加 Bootstrap 的响应式表格容器 -->
+      <table class="table table-bordered table-responsive-sm"> <!-- 使用 Bootstrap 表格类名 -->
+        <thead class="thead-dark"> <!-- 使用 Bootstrap 表格头部类名 -->
+          <tr>
+            <th>　　</th>
+            <th></th>
+            <th>　　</th>
+            <th></th>
+            <th>健康</th>
+            <th></th>
+            <th>財帛</th>
+            <th></th>
+            <th>子女</th>
+            <th></th>
+            <th>姻緣</th>
+            <th></th>
+            <th>外緣</th>
+            <th></th>
+            <th>命宮</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${numbersText}
+          ${elementsText}
+        </tbody>
+      </table>
+    </div>
   `;
+
+  // 在窗口大小变化时，重新计算表格宽度
+  window.addEventListener('resize', function() {
+    const table = document.querySelector('.table-responsive');
+    table.style.width = window.innerWidth;
+  });
 
   // 驗證電話號碼是否有效的函數
   function isValidPhoneNumber(phoneNumber) {
@@ -125,4 +137,4 @@ function handleSubmit() {
     // 為了簡單起見，我們只檢查輸入是否為非空
     return phoneNumber.trim() !== ''; // 檢查是否為非空
   }
-  }
+}
