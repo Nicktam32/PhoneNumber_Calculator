@@ -1,0 +1,10 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  text-align: center;
+  padding: 8px;
+  border: none; /* 移除表格的邊框線 */
+}
