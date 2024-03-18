@@ -2,12 +2,6 @@ document.getElementById('phoneNumber').addEventListener('input', function () {
   // 獲取輸入框中的值
   const phoneNumber = this.value;
   
-  // 驗證電話號碼格式（可選）
-  if (!isValidPhoneNumber(phoneNumber)) { // 檢查是否為有效電話號碼
-    alert('請輸入有效的電話號碼。'); // 提示訊息
-    return;
-  }
-
   // 定義五行元素
   const elements = ['<span style="color:brown;">土</span>', '<span style="color:blue;">水</span>', 
                     '<span style="color:brown;">土</span>', '<span style="color:green;">木</span>',
@@ -357,10 +351,27 @@ document.getElementById('phoneNumber').addEventListener('input', function () {
     if (i + 1 < lastEightDigits.length) {
       const digit = parseInt(lastEightDigits[i]);
       const parsedDigit = isNaN(digit) ? ' ' : digit; // 若為 NaN，則以空白取代
-      const cross_interactions = dictionary[(parsedDigit * 10 + parseInt(lastEightDigits[i + 1]))];
-      eightHouseText += `<td>${cross_interactions}</td><td></td>`;
+
+      // 如果第一個數字是5
+      if (parsedDigit === 5 && i === 0){
+        const cross_interactions = '伏位';
+        eightHouseText += `<td>${cross_interactions}</td><td></td>`;
+      }
+      else if (parseInt(lastEightDigits[i + 1]) === 5 || parseInt(lastEightDigits[i + 1]) === 0) {
+        const cross_interactions = dictionary[(parsedDigit * 10 + parseInt(lastEightDigits[i + 2]))];
+        eightHouseText += `<td>${cross_interactions}</td><td></td>`;
+      }
+      else if (parsedDigit === 5 || parsedDigit === 0) {
+        const cross_interactions = dictionary[(parseInt(lastEightDigits[i - 1]) * 10 + parseInt(lastEightDigits[i + 1]))];
+        eightHouseText += `<td>${cross_interactions}</td><td></td>`;
+      }
+      else {
+        const cross_interactions = dictionary[(parsedDigit * 10 + parseInt(lastEightDigits[i + 1]))];
+        eightHouseText += `<td>${cross_interactions}</td><td></td>`;
+      }
     }
   }
+  eightHouseText += '</tr>';
 
   // 奇門盤
   // 宮位
@@ -465,10 +476,4 @@ document.getElementById('phoneNumber').addEventListener('input', function () {
     table.style.width = tableWidth;
   });
 
-  // 驗證電話號碼是否有效的函數
-  function isValidPhoneNumber(phoneNumber) {
-    // 您可以在此實現自己的驗證邏輯
-    // 為了簡單起見，我們只檢查輸入是否為非空
-    return phoneNumber.trim() !== ''; // 檢查是否為非空
-  }
 });
