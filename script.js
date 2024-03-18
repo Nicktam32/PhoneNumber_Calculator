@@ -87,15 +87,15 @@ document.getElementById('phoneNumber').addEventListener('input', function () {
   let qiMenText = '<tr><td></td><td></td>';
 
   const palaces = ['空亡', '坎', '坤', '震', '巽', '坤', '乾', '兌', '艮', '離']; // 宮位
-  const gods = ['空亡', '<span style="color:green;">值符</span>', '螣蛇', '<span style="color:green;">太陰</span>',
-                '<span style="color:green;">六合</span>', '<span style="color:red;">白虎</span>', '玄武', '九地', '<span style="color:green;">九天</span>',
-                '<span style="color:green;">值符</span>']; // 八神
-  const stars = ['空亡', '<span style="color:red;">天蓬</span>', '<span style="color:red;">天苪</span>', '天沖', '<span style="color:green;">天輔</span>',
-                  '天禽', '<span style="color:green;">天心</span>', '天柱', '<span style="color:green;">天任</span>', '天英']; // 九星
-  const gates = ['空亡', '<span style="color:green;">休門</span>','<span style="color:red;">死門</span>','傷門','杜門','<span style="color:red;">死門(寄)</span>',
-                  '<span style="color:green;">開門</span>', '驚門','<span style="color:green;">生門</span>','景門']; // 八門
-  const stems = ['癸', '<span style="color:green;">甲(戊)</span>','<span style="color:green;">乙</span>','<span style="color:green;">丙</span>',
-                  '<span style="color:green;">丁</span>','<span style="color:green;">戊</span>','己','<span style="color:red;">庚</span>','辛','壬']; // 天干
+  const gods = ['空亡', '<span style="color:red;">值符</span>', '螣蛇', '<span style="color:red;">太陰</span>',
+                '<span style="color:red;">六合</span>', '<span style="color:green;">白虎</span>', '玄武', '九地', '<span style="color:red;">九天</span>',
+                '<span style="color:red;">值符</span>']; // 八神
+  const stars = ['空亡', '<span style="color:green;">天蓬</span>', '<span style="color:green;">天苪</span>', '天沖', '<span style="color:red;">天輔</span>',
+                  '天禽', '<span style="color:red;">天心</span>', '天柱', '<span style="color:red;">天任</span>', '天英']; // 九星
+  const gates = ['空亡', '<span style="color:red;">休門</span>','<span style="color:green;">死門</span>','傷門','杜門','<span style="color:green;">死門(寄)</span>',
+                  '<span style="color:red;">開門</span>', '驚門','<span style="color:red;">生門</span>','景門']; // 八門
+  const stems = ['癸', '<span style="color:red;">甲(戊)</span>','<span style="color:red;">乙</span>','<span style="color:red;">丙</span>',
+                  '<span style="color:red;">丁</span>','<span style="color:red;">戊</span>','己','<span style="color:green;">庚</span>','辛','壬']; // 天干
 
 
   for (let i = 0; i < lastEightDigits.length; i++) {
