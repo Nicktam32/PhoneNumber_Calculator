@@ -51,6 +51,10 @@ window.addEventListener('DOMContentLoaded', () => {
             const imgElement = document.createElement('img');
             imgElement.src = 'qiMen_pic.png'; 
             imgElement.alt = 'qiMen_pic';
+
+            // Set the width and height of the image 
+            imgElement.width = 750; 
+            imgElement.height = 500; 
             remarksContainer.appendChild(imgElement); 
         }
     });
