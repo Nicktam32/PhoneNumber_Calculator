@@ -352,8 +352,7 @@ document.getElementById('phoneNumber').addEventListener('input', function () {
       const digit = parseInt(lastEightDigits[i]);
       const parsedDigit = isNaN(digit) ? ' ' : digit; // 若為 NaN，則以空白取代
 
-      // 如果第一個數字是5
-      if (parsedDigit === 5 && i === 0){
+      if ((parsedDigit === 5 && parseInt(lastEightDigits[i + 1]) === 5) || (parsedDigit === 0 && parseInt(lastEightDigits[i + 1]) === 0)){
         const cross_interactions = '伏位';
         eightHouseText += `<td>${cross_interactions}</td><td></td>`;
       }
