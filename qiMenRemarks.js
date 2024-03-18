@@ -2,7 +2,8 @@
 window.addEventListener('DOMContentLoaded', () => {
     // 獲取電話號碼輸入框元素和備註容器元素
     const phoneNumberInput = document.getElementById('phoneNumber');
-    const remarksContainer = document.getElementById('remarksContainer');
+    const qiMenRemarksContainer = document.getElementById('qiMenRemarksContainer');
+    const eightHouseRemarksContainer = document.getElementById('eightHouseRemarksContainer');
 
     // 監聽輸入框的變化
     phoneNumberInput.addEventListener('input', () => {
@@ -15,6 +16,24 @@ window.addEventListener('DOMContentLoaded', () => {
         // 補齊不足8位的情況
         while (lastEightDigits.length < 8) {
             lastEightDigits = ' ' + lastEightDigits; // 在前面添加空白，直到總共有8位數字
+        }
+      
+        // 八宅盤 Remarks
+        let eightHouseRemarks = '';
+
+        for (let i = 0; i < lastEightDigits.length; i++) {
+        }
+
+        // 根據 eightHouseRemarks 是否有內容來判斷是否打印消息
+        if (eightHouseRemarks.trim() !== '') {
+            eightHouseRemarksContainer.innerHTML = `
+                <hr>
+                <h6>八宅盤 Remarks</h6>
+                <p>${eightHouseRemarks}</p>
+            `;
+        } else {
+            // 如果沒有內容，清空備註容器
+            eightHouseRemarksContainer.innerHTML = '';
         }
 
         // 奇門盤 Remarks
@@ -38,14 +57,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
         // 根據 qimenRemarks 是否有內容來判斷是否打印消息
         if (qimenRemarks.trim() !== '') {
-            remarksContainer.innerHTML = `
+            qiMenRemarksContainer.innerHTML = `
                 <hr>
                 <h6>奇門盤 Remarks</h6>
                 <p>${qimenRemarks}</p>
             `;
         } else {
             // 如果沒有內容，清空備註容器
-            remarksContainer.innerHTML = '';
+            qiMenRemarksContainer.innerHTML = '';
 
             // Create the image element
             const imgElement = document.createElement('img');
@@ -53,9 +72,9 @@ window.addEventListener('DOMContentLoaded', () => {
             imgElement.alt = 'qiMen_pic';
 
             // Set the width and height of the image 
-            imgElement.width = 750; 
+            imgElement.width = 700; 
             imgElement.height = 500; 
-            remarksContainer.appendChild(imgElement); 
+            qiMenRemarksContainer.appendChild(imgElement); 
         }
     });
 });
