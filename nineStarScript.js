@@ -141,7 +141,41 @@ document.getElementById('phoneNumber').addEventListener('input', function () {
     66: '伏位',
     77: '伏位',
     88: '伏位',
-    99: '伏位'
+    99: '伏位',
+    51: '伏位',
+    52: '伏位',
+    53: '伏位',
+    54: '伏位',
+    55: '伏位',
+    56: '伏位',
+    57: '伏位',
+    58: '伏位',
+    59: '伏位',
+    15: '伏位',
+    25: '伏位',
+    35: '伏位',
+    45: '伏位',
+    65: '伏位',
+    75: '伏位',
+    85: '伏位',
+    95: '伏位',
+    "01": '伏位',
+    "02": '伏位',
+    "03": '伏位',
+    "04": '伏位',
+    "05": '伏位',
+    "06": '伏位',
+    "07": '伏位',
+    "08": '伏位',
+    "09": '伏位',
+    10: '伏位',
+    20: '伏位',
+    30: '伏位',
+    40: '伏位',
+    60: '伏位',
+    70: '伏位',
+    80: '伏位',
+    90: '伏位'
   }
 
   const energy = {
@@ -347,11 +381,12 @@ document.getElementById('phoneNumber').addEventListener('input', function () {
 
   let eightHouseText = '<tr><td></td>';
   for (let i = 0; i < lastEightDigits.length; i++) {
+    const digit = parseInt(lastEightDigits[i]);
+    const parsedDigit = isNaN(digit) ? ' ' : digit; // 若為 NaN，則以空白取代
+
     // 檢查下一個索引是否超出範圍，如果沒有則計算 interactions_element
     if (i + 1 < lastEightDigits.length) {
-      const digit = parseInt(lastEightDigits[i]);
-      const parsedDigit = isNaN(digit) ? ' ' : digit; // 若為 NaN，則以空白取代
-
+      // 處理頭有5,0
       if ((parsedDigit === 5 && parseInt(lastEightDigits[i + 1]) === 5) || (parsedDigit === 0 && parseInt(lastEightDigits[i + 1]) === 0)){
         const cross_interactions = '伏位';
         eightHouseText += `<td>${cross_interactions}</td><td></td>`;
@@ -370,6 +405,7 @@ document.getElementById('phoneNumber').addEventListener('input', function () {
       }
     }
   }
+
   eightHouseText += '</tr>';
 
   // 奇門盤
