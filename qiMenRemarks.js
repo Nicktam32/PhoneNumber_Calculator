@@ -17,24 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
         while (lastEightDigits.length < 8) {
             lastEightDigits = ' ' + lastEightDigits; // 在前面添加空白，直到總共有8位數字
         }
-      
-        // 八宅盤 Remarks
-        let eightHouseRemarks = '';
-
-        for (let i = 0; i < lastEightDigits.length; i++) {
-        }
-
-        // 根據 eightHouseRemarks 是否有內容來判斷是否打印消息
-        if (eightHouseRemarks.trim() !== '') {
-            eightHouseRemarksContainer.innerHTML = `
-                <hr>
-                <h6>八宅盤 Remarks</h6>
-                <p>${eightHouseRemarks}</p>
-            `;
-        } else {
-            // 如果沒有內容，清空備註容器
-            eightHouseRemarksContainer.innerHTML = '';
-        }
 
         // 奇門盤 Remarks
         let qimenRemarks = '';

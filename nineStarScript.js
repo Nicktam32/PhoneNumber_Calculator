@@ -46,8 +46,8 @@ document.getElementById('phoneNumber').addEventListener('input', function () {
     '金金': '=同='
   };
 
-  // 取得最後8個數字
-  let lastEightDigits = phoneNumber.slice(-8);
+  // 移除空格並取得最後8個數字
+  let lastEightDigits = phoneNumber.replace(/\s/g, '').slice(-8);
 
   // 補齊不足8位的情況
   while (lastEightDigits.length < 8) {
@@ -433,23 +433,25 @@ document.getElementById('phoneNumber').addEventListener('input', function () {
           ${numbersText}
           ${elementsText}
           ${eightHouseText}
-        <tr>
-            <th>　　</th>
-            <th></th>
-            <th>　　</th>
-            <th></th>
-            <th>八宮</th>
-            <th></th>
-            <th>八神</th>
-            <th></th>
-            <th>九星</th>
-            <th></th>
-            <th>八門</th>
-            <th></th>
-            <th>天盤干</th>
-            <th></th>
-            <th>地盤干</th>
-         </tr>
+        <thead class="thead-dark"> 
+          <tr>
+              <th>　　</th>
+              <th></th>
+              <th>　　</th>
+              <th></th>
+              <th>八宮</th>
+              <th></th>
+              <th>八神</th>
+              <th></th>
+              <th>九星</th>
+              <th></th>
+              <th>八門</th>
+              <th></th>
+              <th>天盤干</th>
+              <th></th>
+              <th>地盤干</th>
+          </tr>
+        </thead>
          ${qiMenText}
       </table>
     </div>
