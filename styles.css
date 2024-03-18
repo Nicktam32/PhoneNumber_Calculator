@@ -1,11 +1,13 @@
 /* Custom CSS to hide table lines and borders */
 .table {
-  border-collapse: collapse;
+  width: 700px; /* 設定表格寬度為 700px */
+  border-collapse: collapse; /* 合併邊框 */
   border: none;
 }
 
 .table td,
 .table th {
-  border: none;
-  vertical-align: middle;
+  border: 1px solid black;
+  padding: 8px; /* 設定單元格內邊距 */
+  text-align: center; /* 文本置中對齊 */
 }
