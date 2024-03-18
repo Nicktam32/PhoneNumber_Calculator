@@ -1,14 +1,7 @@
-document.getElementById('phoneNumber').addEventListener('keypress', function (e) {
-  if (e.key === 'Enter') {
-      handleSubmit();
-  }
-});
-
-// 提交表單時的處理函數
-function handleSubmit() {
+document.getElementById('phoneNumber').addEventListener('input', function () {
   // 獲取輸入框中的值
-  const phoneNumber = document.getElementById('phoneNumber').value;
-
+  const phoneNumber = this.value;
+  
   // 驗證電話號碼格式（可選）
   if (!isValidPhoneNumber(phoneNumber)) { // 檢查是否為有效電話號碼
     alert('請輸入有效的電話號碼。'); // 提示訊息
@@ -18,9 +11,9 @@ function handleSubmit() {
   // 定義五行元素
   const elements = ['<span style="color:brown;">土</span>', '<span style="color:blue;">水</span>', 
                     '<span style="color:brown;">土</span>', '<span style="color:green;">木</span>',
-                     '<span style="color:green;">木</span>', '<span style="color:brown;">土</span>',
+                      '<span style="color:green;">木</span>', '<span style="color:brown;">土</span>',
                       '<span style="color:gold;">金</span>', '<span style="color:gold;">金</span>',
-                       '<span style="color:brown;">土</span>', '<span style="color:red;">火</span>']; 
+                        '<span style="color:brown;">土</span>', '<span style="color:red;">火</span>']; 
   const cleanElements = elements.map(element => element.replace(/(<([^>]+)>)/gi, ''));
   // 定義宮位
   const position = ['','','健康', '財帛', '子女', '姻緣', '外緣', '命宮']; 
@@ -86,18 +79,58 @@ function handleSubmit() {
       }
     }
   }
-
   numbersText += '</tr>';
   elementsText += '</tr>';
+
+  // 奇門盤
+  // 宮位
+  let qiMenText = '<tr><td></td><td></td>';
+
+  const palaces = ['空亡', '坎', '坤', '震', '巽', '坤', '乾', '兌', '艮', '離']; // 宮位
+  const gods = ['空亡', '<span style="color:green;">值符</span>', '螣蛇', '<span style="color:green;">太陰</span>',
+                '<span style="color:green;">六合</span>', '<span style="color:red;">白虎</span>', '玄武', '九地', '<span style="color:green;">九天</span>',
+                '<span style="color:green;">值符</span>']; // 八神
+  const stars = ['空亡', '<span style="color:red;">天蓬</span>', '<span style="color:red;">天苪</span>', '天沖', '<span style="color:green;">天輔</span>',
+                  '天禽', '<span style="color:green;">天心</span>', '天柱', '<span style="color:green;">天任</span>', '天英']; // 九星
+  const gates = ['空亡', '<span style="color:green;">休門</span>','<span style="color:red;">死門</span>','傷門','杜門','<span style="color:red;">死門(寄)</span>',
+                  '<span style="color:green;">開門</span>', '驚門','<span style="color:green;">生門</span>','景門']; // 八門
+  const stems = ['癸', '<span style="color:green;">甲(戊)</span>','<span style="color:green;">乙</span>','<span style="color:green;">丙</span>',
+                  '<span style="color:green;">丁</span>','<span style="color:green;">戊</span>','己','<span style="color:red;">庚</span>','辛','壬']; // 天干
+
+
+  for (let i = 0; i < lastEightDigits.length; i++) {
+    const digit = parseInt(lastEightDigits[i]);
+    if (i == 2) {
+      qiMenText += `<td>${palaces[digit]}</td>`;
+    }
+    if (i == 3) {
+      qiMenText += `<td>${gods[digit]}</td>`;
+    }
+    if (i == 4) {
+      qiMenText += `<td>${stars[digit]}</td>`;
+    }
+    if (i == 5) {
+      qiMenText += `<td>${gates[digit]}</td>`;
+    }
+    if (i == 6) {
+      qiMenText += `<td>${stems[digit]}</td>`;
+    }
+    if (i == 7) {
+      qiMenText += `<td>${stems[digit]}</td>`;
+    }
+    else {
+      qiMenText += `<td></td>`;
+    }
+  }
+  qiMenText += '</tr>';
 
   // 顯示生剋關係表格
   const resultDiv = document.getElementById('result');
   resultDiv.innerHTML = `
-    <br>
     <hr>
     <p>您的電話號碼是：${phoneNumber}</p>
     <!-- HTML structure with Bootstrap classes -->
-    <div class="table-responsive"> 
+    <div class="table-responsive-nineStar"> 
       <table class="table table-bordered table-responsive-sm text-center"> 
         <thead class="thead-dark"> 
           <tr>
@@ -122,6 +155,24 @@ function handleSubmit() {
           ${numbersText}
           ${elementsText}
         </tbody>
+        <tr>
+            <th>　　</th>
+            <th></th>
+            <th>　　</th>
+            <th></th>
+            <th>八宮</th>
+            <th></th>
+            <th>八神</th>
+            <th></th>
+            <th>九星</th>
+            <th></th>
+            <th>八門</th>
+            <th></th>
+            <th>天盤干</th>
+            <th></th>
+            <th>地盤干</th>
+          </tr>
+          ${qiMenText}
       </table>
     </div>
   `;
@@ -140,5 +191,4 @@ function handleSubmit() {
     // 為了簡單起見，我們只檢查輸入是否為非空
     return phoneNumber.trim() !== ''; // 檢查是否為非空
   }
-
-}
+});
