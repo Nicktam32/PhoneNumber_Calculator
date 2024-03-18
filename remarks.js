@@ -38,21 +38,20 @@ window.addEventListener('DOMContentLoaded', () => {
 
         // 根據 qimenRemarks 是否有內容來判斷是否打印消息
         if (qimenRemarks.trim() !== '') {
-            // Create the image element
-            const imgElement = document.createElement('img');
-            imgElement.src = 'qiMen_pic.png'; 
-            imgElement.alt = 'qiMen_pic';
-
-            // Append the image element to the remarks container
             remarksContainer.innerHTML = `
                 <hr>
                 <h6>奇門盤 Remarks</h6>
                 <p>${qimenRemarks}</p>
             `;
-            remarksContainer.appendChild(imgElement); // Append the image below the text
         } else {
             // 如果沒有內容，清空備註容器
             remarksContainer.innerHTML = '';
+
+            // Create the image element
+            const imgElement = document.createElement('img');
+            imgElement.src = 'qiMen_pic.png'; 
+            imgElement.alt = 'qiMen_pic';
+            remarksContainer.appendChild(imgElement); 
         }
     });
 });
