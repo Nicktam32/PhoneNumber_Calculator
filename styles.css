@@ -1,6 +1,6 @@
 /* Custom CSS to hide table lines and borders */
 .table {
-  width: 700px; /* 設定表格寬度為 700px */
+  width: 650px; /* 設定表格寬度為 700px */
   border-collapse: collapse; /* 合併邊框 */
   border: none;
 }

@@ -1,7 +1,7 @@
 document.getElementById('phoneNumber').addEventListener('input', function () {
   // 獲取輸入框中的值
   const phoneNumber = this.value;
-  
+
   // 定義五行元素
   const elements = ['<span style="color:brown;">土</span>', '<span style="color:blue;">水</span>', 
                     '<span style="color:brown;">土</span>', '<span style="color:green;">木</span>',
@@ -471,7 +471,7 @@ document.getElementById('phoneNumber').addEventListener('input', function () {
   // 根據螢幕寬度設定表格寬度
   window.addEventListener('resize', function() {
     const table = document.querySelector('.table-responsive-nineStar');
-    const tableWidth = '700px'; // Fixed width of the table
+    const tableWidth = '650px'; // Fixed width of the table
     
     table.style.width = tableWidth;
   });

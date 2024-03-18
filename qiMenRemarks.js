@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
             imgElement.alt = 'qiMen_pic';
 
             // Set the width and height of the image 
-            imgElement.width = 700; 
+            imgElement.width = 650; 
             imgElement.height = 500; 
             qiMenRemarksContainer.appendChild(imgElement); 
         }
