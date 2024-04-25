@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             // Create the image element
             const imgElement = document.createElement('img');
-            imgElement.src = 'qiMen_pic.png'; 
+            imgElement.src = 'images/qiMen_pic.png'; 
             imgElement.alt = 'qiMen_pic';
 
             // Set the width and height of the image 
