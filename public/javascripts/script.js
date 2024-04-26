@@ -19,7 +19,7 @@ function generateTable() {
   
     // Create table header row
   const headerRow = document.createElement("tr");
-  const headerColumns = ["父母宮", "福德宮", "田宅宮", "事業宮", "交友宮", "遷移宮", "疾厄宮", "財帛宮", "子女宮", "夫妻宮", "兄弟宮", "命宮"];
+  const headerColumns = ["父母宮", "福德宮", "田宅宮", "事業宮", "奴僕宮", "遷移宮", "疾厄宮", "財帛宮", "子女宮", "夫妻宮", "兄弟宮", "命宮"];
   for (let i = 0; i < phoneNumber.length; i++) {
     const th = document.createElement("th");
     th.textContent = headerColumns[i + headerColumns.length - phoneNumber.length] || '';
