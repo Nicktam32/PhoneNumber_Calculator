@@ -172,6 +172,14 @@ const specialCombinations = [
       "interpretation": "家運無期、損小口(牙病、小朋友)、易小產"
     },
     {
+      "combination": "49",
+      "interpretation": " 木(4)火(9)通明，主聰明(49)、文昌(49)、先天合金:利用才智解決不斷的困難"
+    },
+    {
+      "combination": "94",
+      "interpretation": " 木(4)火(9)通明，主聰明(49)、文昌(49)、先天合金:利用才智解決不斷的困難"
+    },
+    {
       "combination": "59",
       "interpretation": "性病(9為桃花)、癌症、化療(9+2+5)、功(9)高蓋主(5)、口腔問題、腸胃炎"
     },
