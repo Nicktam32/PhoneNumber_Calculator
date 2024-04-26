@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PhoneNum_Calculator</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <h2>PhoneNum_Calculator</h2>
+    <input type="text" id="phoneNumberInput" placeholder="Enter a phone number">
+    <button onclick="generateTable()"> Submit</button>
+    <button onclick="navigateToOldVersion()">Go to Old Version</button>
+    <div id="tableContainer"></div>
+  </div>
+
+  <!-- Render to old version -->
+  <script>
+    function navigateToOldVersion() {
+      window.location.href = '/old_version.html';
+    }
+  </script>
+
+  <script src="/javascripts/script.js"></script>
+  <script src="/javascripts/special_combination.js"></script>
+  <script src="/javascripts/wealth_meaning.js"></script>
+  <script src="/javascripts/couple_meaning.js"></script>
+</body>
+</html>
