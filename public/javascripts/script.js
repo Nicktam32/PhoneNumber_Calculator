@@ -69,6 +69,14 @@ function generateTable() {
       tableContainer.appendChild(remark);
     }
   }
+
+  // Create an image element
+  const imageElement = document.createElement('img');
+  imageElement.src = '/images/five_elements.jpg'; 
+  imageElement.alt = 'five_elements'; 
+  
+  // Append the image element to the table container
+  tableContainer.appendChild(imageElement);
 }
 
 // Function to get the corresponding element based on the number
