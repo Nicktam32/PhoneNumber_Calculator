@@ -70,13 +70,36 @@ function generateTable() {
     }
   }
 
+  // Create a container element for the image and message
+  const imageContainer = document.createElement('div');
+  imageContainer.style.display = 'flex'; // Use flexbox to align image and message
+  imageContainer.style.alignItems = 'center'; // Vertically center the items
+
   // Create an image element
   const imageElement = document.createElement('img');
   imageElement.src = '/images/five_elements.jpg'; 
   imageElement.alt = 'five_elements'; 
-  
-  // Append the image element to the table container
-  tableContainer.appendChild(imageElement);
+  imageElement.style.marginRight = '10px';
+
+  // Create a message element
+  const messageElement = document.createElement('div');
+  messageElement.innerHTML = `
+    <p>6：乾卦，對應大腸、腦、脊椎、督脈、胸部、左下腹、左下肢、男性生殖器。</p>
+    <p>2：坤卦，對應脾胃、任脈、腹部、左肩、肌肉、消化系統。</p>
+    <p>3：震卦，對應肝臟、雙足、神經、筋脈、筋膜、右腰、右脅肋、右肩臂等。</p>
+    <p>4：巽卦，對應膽腑、肱股、右肩、神經、食道、腸道、淋巴系統、呼吸器官。</p>
+    <p>1：坎卦，對應腎、膀胱、任脈、耳、腰、骨、髓、腦、發、性器官、血液迴圈、泌尿生殖、免疫系統。</p>
+    <p>9：離卦，對應心臟、心包、血脈、小腸、眼目、頭臉部、頸部、胸部、上腹部。</p>
+    <p>8：艮卦，對應脾胃、鼻、手、右下肢、腳背、足趾、背脊、皮、乳房等凸起之處。</p>
+    <p>7：兌卦，對應肺臟、氣管、食道、口舌、咽喉、牙齒、左腰、左肋、肛門、皮毛。</p>
+  `;
+
+  // Append the image and message elements to the container
+  imageContainer.appendChild(imageElement);
+  imageContainer.appendChild(messageElement);
+
+  // Append the image container to the table container
+  tableContainer.appendChild(imageContainer);
 }
 
 // Function to get the corresponding element based on the number
