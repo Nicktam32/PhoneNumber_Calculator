@@ -50,10 +50,12 @@ function generateTable() {
   tableContainer.appendChild(table);
 
   // Check for special combinations
-  for (const combo of specialCombinations) {
-    if (phoneNumber.includes(combo.combination)) {
+  for (let i = 0; i < phoneNumber.length - 1; i++) {
+    const combo = phoneNumber.slice(i, i + 2);
+    const comboObject = specialCombinations.find(obj => obj.combination === combo);
+    if (comboObject) {
       const remark = document.createElement('p');
-      remark.textContent = `${combo.combination} ： ${combo.interpretation}`;
+      remark.textContent = `${comboObject.combination} ： ${comboObject.interpretation}`;
       tableContainer.appendChild(remark);
     }
   }
