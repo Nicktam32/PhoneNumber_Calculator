@@ -41,13 +41,13 @@ window.addEventListener('DOMContentLoaded', () => {
         if (qimenRemarks.trim() !== '') {
             qiMenRemarksContainer.innerHTML = `
                 <hr>
-                <h6>奇門盤 Remarks</h6>
+                <h3>奇門盤 Remarks</h3>
                 <p>${qimenRemarks}</p>
             `;
         } else {
             // 如果沒有內容，清空備註容器
             qiMenRemarksContainer.innerHTML = '';
-
+        }
             // Create the image element
             const imgElement = document.createElement('img');
             imgElement.src = 'images/qiMen_pic.png'; 
@@ -57,6 +57,5 @@ window.addEventListener('DOMContentLoaded', () => {
             imgElement.width = 650; 
             imgElement.height = 500; 
             qiMenRemarksContainer.appendChild(imgElement); 
-        }
     });
 });
