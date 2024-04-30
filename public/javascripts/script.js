@@ -53,7 +53,7 @@ function generateTable() {
   for (let i = 0; i < phoneNumber.length - 1; i++) {
     const combo = phoneNumber.slice(i, i + 2);
     const comboObject = specialCombinations.find(obj => obj.combination === combo);
-    if (comboObject) {
+    if (comboObject !== null) { // Add this check
       const remark = document.createElement('p');
       remark.textContent = `${comboObject.combination} ： ${comboObject.interpretation}`;
       tableContainer.appendChild(remark);
