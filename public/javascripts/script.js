@@ -49,16 +49,20 @@ function generateTable() {
   // Append table to the container
   tableContainer.appendChild(table);
 
+  // Remove null values from specialCombinations
+  specialCombinations = specialCombinations.filter(obj => obj !== null && typeof obj === 'object');
+  
   // Check for special combinations
   for (let i = 0; i < phoneNumber.length - 1; i++) {
-    const combo = phoneNumber.slice(i, i + 2);
+    const combo = parseInt(phoneNumber.slice(i, i + 2), 10);
     const comboObject = specialCombinations.find(obj => obj.combination === combo);
-    if (comboObject !== null) { // Add this check
+    if (comboObject) {
       const remark = document.createElement('p');
       remark.textContent = `${comboObject.combination} ： ${comboObject.interpretation}`;
       tableContainer.appendChild(remark);
     }
   }
+
 
   // Create a container element for the image and message
   const imageContainer = document.createElement('div');
