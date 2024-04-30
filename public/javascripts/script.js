@@ -58,9 +58,9 @@ function generateTable() {
   document.head.appendChild(remarkStyle);
 
   // Array of special combinations to be printed in red
-  const redCombinations = [11, 14, 41, 16, 61, 26, 62, 28, 82, 44, 49, 94, 66, 68, 86, 78, 87, 88, 89, 98, 99, 39, 93, 17, 71, 81, 18];
-  const orangeCombinations = [19, 91, 97, 79]  
-  const greenCombinations = [23, 32, 25, 52, 37, 73, 38, 83, 45, 54, 67, 76, 96, 69];
+  const redCombinations = [11, 14, 41, 16, 61, 26, 62, 28, 82, 44, 49, 94, 66, 68, 86, 78, 87, 88, 89, 98, 99, 81, 18];
+  const orangeCombinations = [19, 91, 38, 83, 97, 79]  
+  const greenCombinations = [12, 21, 22, 23, 32, 25, 52, 35, 53, 46, 64, 37, 73, 45, 54, 46, 64, 47, 74, 55, 67, 76, 96, 69];
 
   // Check for special combinations
   for (let i = 0; i < phoneNumber.length - 1; i++) {
