@@ -34,7 +34,7 @@ function generateAddOns() {
     resultSpan.innerHTML = ''; // Clear the container
   
     const message = document.createElement('span');
-    const elements = ['九紫火', '一白水', '二黑土', '三碧木', '四綠木', '五黃土', '六白金', '七赤金', '八白土'];
+    const elements = ['九紫火(宜用4、9)', '一白水(宜用1、6)', '二黑土(宜用8、9)', '三碧木(宜用1、4)', '四綠木(宜用1、4)', '五黃土(宜用8、9)', '六白金(宜用6、8)', '七赤金(宜用6、8)', '八白土(宜用8、9)'];
   
     if (gender === 'male') {
       const calculation = (38 - sum) / 9;
