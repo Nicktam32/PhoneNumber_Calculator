@@ -13,7 +13,7 @@ specialCombinations = [
     },
     {
      "combination": 14,
-     "interpretation": "一四同宮，準發科名之顯 → 因智慧(1)而利文昌(4)、名聲(4)、文職(4)、聰明(1)、利桃花(未拍拖旺正桃花)、找工作(from notes)、(from notes)"
+     "interpretation": "一四同宮，準發科名之顯 → 因智慧(1)而利文昌(4)、名聲(4)、文職(4)、聰明(1)、利桃花(未拍拖旺正桃花)、找工作(from notes)"
     },
     {
      "combination": 15,
@@ -29,7 +29,7 @@ specialCombinations = [
     },
     {
      "combination": 18,
-     "interpretation": "土(8)克水(1) → 易犯耳病、腎臟病、膀胱病"
+     "interpretation": "土(8)克水(1) → 易犯耳病、腎臟病、膀胱病、易結交貴人(8權1人緣)"
     },
     {
      "combination": 19,
@@ -112,7 +112,7 @@ specialCombinations = [
     null,
     {
      "combination": 41,
-     "interpretation": "一四同宮，準發科名之顯 → 因智慧(1)而利文昌(4)、名聲(4)、文職(4)、聰明(1)、利桃花(未拍拖旺正桃花)、找工作(from notes)、(from notes)"
+     "interpretation": "一四同宮，準發科名之顯 → 因智慧(1)而利文昌(4)、名聲(4)、文職(4)、聰明(1)、利桃花(未拍拖旺正桃花)、找工作(from notes)"
     },
     {
      "combination": 42,
@@ -260,7 +260,7 @@ specialCombinations = [
     null,
     {
      "combination": 81,
-     "interpretation": "土(8)克水(1) → 易犯耳病、腎臟病、膀胱病"
+     "interpretation": "土(8)克水(1) → 易犯耳病、腎臟病、膀胱病、易結交貴人(8權1人緣)"
     },
     {
      "combination": 82,

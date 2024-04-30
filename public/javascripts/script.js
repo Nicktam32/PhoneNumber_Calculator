@@ -52,6 +52,16 @@ function generateTable() {
   // Remove null values from specialCombinations
   specialCombinations = specialCombinations.filter(obj => obj !== null && typeof obj === 'object');
   
+  // Add this CSS style to make the remarks red or green
+  const remarkStyle = document.createElement('style');
+  remarkStyle.textContent = `.red-remark { color: red; } .green-remark { color: green; } .orange-remark { color: orange; }`;
+  document.head.appendChild(remarkStyle);
+
+  // Array of special combinations to be printed in red
+  const redCombinations = [11, 14, 41, 16, 61, 26, 62, 28, 82, 44, 49, 94, 66, 68, 86, 78, 87, 88, 89, 98, 99, 39, 93, 17, 71, 81, 18];
+  const orangeCombinations = [19, 91, 97, 79]  
+  const greenCombinations = [23, 32, 25, 52, 37, 73, 38, 83, 45, 54, 67, 76, 96, 69];
+
   // Check for special combinations
   for (let i = 0; i < phoneNumber.length - 1; i++) {
     const combo = parseInt(phoneNumber.slice(i, i + 2), 10);
@@ -59,6 +69,16 @@ function generateTable() {
     if (comboObject) {
       const remark = document.createElement('p');
       remark.textContent = `${comboObject.combination} ： ${comboObject.interpretation}`;
+      // Add colors
+      if (redCombinations.includes(comboObject.combination)) {
+        remark.classList.add('red-remark');
+      }
+      else if (greenCombinations.includes(comboObject.combination)) {
+        remark.classList.add('green-remark');
+      }
+      else if (orangeCombinations.includes(comboObject.combination)) {
+        remark.classList.add('orange-remark');
+      }
       tableContainer.appendChild(remark);
     }
   }
