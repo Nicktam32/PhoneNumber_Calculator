@@ -1,4 +1,4 @@
-specialCombinations = [
+specialCombinations =[
     {
      "combination": "11",
      "interpretation": "一白水星為文昌星，有利讀書。靈感泉湧，文章振发，有利創作。同時利文職文官。"
