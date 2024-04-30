@@ -34,16 +34,16 @@ function generateAddOns() {
     resultSpan.innerHTML = ''; // Clear the container
   
     const message = document.createElement('span');
-    const elements = ['一白水', '二黑土', '三碧木', '四綠木', '五黃土', '六白金', '七赤金', '八白土', '九紫火'];
+    const elements = ['九紫火', '一白水', '二黑土', '三碧木', '四綠木', '五黃土', '六白金', '七赤金', '八白土'];
   
     if (gender === 'male') {
       const calculation = (38 - sum) / 9;
       const remainder = Math.floor(calculation % 1 * 10);
-      message.textContent = elements[remainder - 1] || remainder;
+      message.textContent = elements[remainder] || remainder;
     } else {
       const calculation = (sum + 4) / 9;
       const remainder = Math.floor(calculation % 1 * 10);
-      message.textContent = elements[remainder - 1] || remainder;
+      message.textContent = elements[remainder] || remainder;
     }
   
     resultSpan.appendChild(message);
