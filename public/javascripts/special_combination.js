@@ -1,324 +1,334 @@
-specialCombinations =[
+specialCombinations = [
     {
-     "combination": "11",
-     "interpretation": "一白水星為文昌星，有利讀書。靈感泉湧，文章振发，有利創作。同時利文職文官。"
+     "combination": 11,
+     "interpretation": "兩水比和 → 利桃花(1)、利文職文官(1)、聰明(1)"
     },
     {
-     "combination": "12",
-     "interpretation": "土(2)剋水(1)易有血、精、腎疾病。二黑土失令之時，土自然難以克制水，多應黃腫之病、體內水循環失調。"
+     "combination": 12,
+     "interpretation": "土(2)剋水(1) → 男性易患腸胃病、腎病、耳疾。女性易患腸胃病或婦科病。"
     },
     {
-     "combination": "13",
-     "interpretation": "當元旺令，水生木主出聲名之人(3)。財祿豐盈，興家創業。失運時，變成煞氣，主是非，爭論之事(3)。"
+     "combination": 13,
+     "interpretation": "主是非(3)、爭訟官非(3)、醫重症(from notes)"
     },
     {
-     "combination": "14",
-     "interpretation": "四一同宮，準发科名之顯。一白水主智慧，四綠木主名譽。四一並主桃花，詩酒風流。失令時。必主淫茵。"
+     "combination": 14,
+     "interpretation": "一四同宮，準發科名之顯 → 因智慧(1)而利文昌(4)、名聲(4)、文職(4)、聰明(1)、利桃花(未拍拖旺正桃花)、找工作(from notes)、(from notes)"
     },
     {
-     "combination": "15",
-     "interpretation": "天都殺，五黃為毒素，說明主人易患生殖疾疾病、性病、酒精中毒。不利人丁，甚至有不孕，絕嗣之憂，因智慧(1)而容易得罪人(5)，會在朋友前show off"
+     "combination": 15,
+     "interpretation": "一加二五，傷及壯丁 → 因智慧(1)而容易得罪人(5)，會在朋友前show off、易患腸胃病、腎病、耳疾"
     },
     {
-     "combination": "16",
-     "interpretation": "得運，金水相生，文章顯達，升官揚名。失運：一白坎水主桃花，失運則淫蕩、主出人智慧不用於正道，空思妄想之象。並且易得頭、骨之病"
+     "combination": 16,
+     "interpretation": "金水多情 → 主桃花(1)、聰明(1)、發小財(6)、口才了得(六煞)"
     },
     {
-     "combination": "17",
-     "interpretation": "得運武職升遷，兒女當行桃花之運，酒肉滿盈生活美滿。失令時水冷金寒，兒女貪花戀酒，錢財散流，或背義忘親。"
+     "combination": 17,
+     "interpretation": "金水多情，貪花戀酒 → 出門有利、旅遊、移民"
     },
     {
-     "combination": "18",
-     "interpretation": "艮為鬼門。一白坎為隱伏，此方若陰暗污穢，主得病人易有幻覺(古時以鬼邪作祟比喻)八白艮為小石，一白坎為腎，二數組合多有患尿道結石。八與一組合失令時主出無知、智障之人，得令時主出忠孝，富貴之人。"
+     "combination": 18,
+     "interpretation": "土(8)克水(1) → 易犯耳病、腎臟病、膀胱病"
     },
     {
-     "combination": "19",
-     "interpretation": "水火既濟，合十佳運，主喜慶，謀事順遂。富貴非常，旺人丁。若失令不合局，主婚姻破裂心臟與腎、眼睛有病。"
+     "combination": 19,
+     "interpretation": "後天合十 → 夫婦先吉而後有傷(19剋合)、火暗而神智難清(水剋火)、水火破財主眼疾"
     },
+    null,
     {
-     "combination": "21",
-     "interpretation": "土(2)剋水(1)易有血、精、腎疾病。二黑土失令之時，土自然難以克制水，多應黃腫之病、體內水循環失調。"
+     "combination": 21,
+     "interpretation": "土(2)剋水(1) → 男性易患腸胃病、腎病、耳疾。女性易患腸胃病或婦科病。"
     },
     {
-     "combination": "22",
-     "interpretation": "二黑土若當令為天醫星，主是醫藥興家，主出名醫。二黑坤土為皮肉，為熱癥，為老母，不得令時主多生病，不限於小兒。大多患脾胃之病。"
+     "combination": 22,
+     "interpretation": "二黑病符，主疾病、孕婦受損、女性婦科病、男性腸胃病"
     },
     {
-     "combination": "23",
-     "interpretation": "鬥牛煞，必然引起家庭缺和，夫妻不和睦。常因與上司爭鬥而惹官非，或因爭鬥而傷身體，總之多勞碌奔波，阻礙破敗。"
+     "combination": 23,
+     "interpretation": "鬥牛煞 → 官非(3)、是非(3)、夫妻不和(3剋2)、人臨龍位產勞傷(傷母產亡)"
     },
     {
-     "combination": "24",
-     "interpretation": "母(2)女(4)不和。婆(2)媳(4)不和。四綠巽主風，二者組合易患神經、中風、慢性腸胃病及呼吸疾病。 "
+     "combination": 24,
+     "interpretation": "木(4)剋土(2) → 室有欺姑之婦(母女不和、婆媳不和)、寅申觸巳，曾聞虎咥家人(被貓狗蛇咬)、山地披風，還生風疾"
     },
     {
-     "combination": "25",
-     "interpretation": "二黑多主屬脾胃、肌肉发熱。黃腫、昏迷之病。五黃為毒索，易忠腫瘤，二五組合，多是重病死亡之災。"
+     "combination": 25,
+     "interpretation": "二五交加必損主，兩病星相遇 → 主大病(2+5)、癌症、孤寡"
     },
     {
-     "combination": "26",
-     "interpretation": "當運二黑巨門主发土地田莊，坤土生乾金雖進財但孤寒。六與二組合在失運時，主出僧尼或孤男寡婦。"
+     "combination": 26,
+     "interpretation": "陰陽正配(乾坤)，土生金 → 利武官(6)、置業(2)、穩定(老父配老婦)、吝嗇"
     },
     {
-     "combination": "27",
-     "interpretation": "生旺主得橫財巨富，出貴女或命卜家。失令則為流產、腹泄之癥"
+     "combination": 27,
+     "interpretation": "二七先天火 → 易受火災、純陰相配，偏桃花"
     },
     {
-     "combination": "28",
-     "interpretation": "多发田產之富。失令，主破財損丁，家出僧道之流(艮坤為生死之門)。"
+     "combination": 28,
+     "interpretation": "後天合十，兩土比和 → 利財運(8)、利田宅(土)、但帶小病(2)，常感不足、現實比較(28皆土)、易出僧尼和信神鬼之人。"
     },
     {
-     "combination": "29",
-     "interpretation": "生旺得令時，文筆生輝，田財巨積。失令時，火被土晦，反主出目疾、心臟病以及婆媳不和燦娌不睦。以及火炎土躁，不長萬物，主出人愚，不生育。"
+     "combination": 29,
+     "interpretation": "火生土 → 多產女(29皆女)、易犯桃花、盲目地幫助他人(2坤)。失令時：不育、寡婦、女同性戀"
     },
+    null,
     {
-     "combination": "31",
-     "interpretation": "當元旺令，水生木主出聲名之人(3)。財祿豐盈，興家創業。失運時，變成煞氣，主是非，爭論之事(3)。"
+     "combination": 31,
+     "interpretation": "主是非(3)、爭訟官非(3)、醫重症(from notes)"
     },
     {
-     "combination": "32",
-     "interpretation": "鬥牛煞，必然引起家庭缺和，夫妻不和睦。常因與上司爭鬥而惹官非，或因爭鬥而傷身體，總之多勞碌奔波，阻礙破敗。"
+     "combination": 32,
+     "interpretation": "鬥牛煞 → 官非(3)、是非(3)、夫妻不和(3剋2)、人臨龍位產勞傷(傷母產亡)"
     },
     {
-     "combination": "33",
-     "interpretation": "震為雷，為車馬。主名聲遠播，光宗耀祖，出有名人物，如歌星、勇士。若失運。上山下水必主出好勇鬥之人、暴徒，手腳殘疾之人，井有啞吧同時肝膽之病。"
+     "combination": 33,
+     "interpretation": "蚩尤碧色，好勇鬥狠之神 → 易犯官訟、是非、爭鬥"
     },
     {
-     "combination": "34",
-     "interpretation": "當元得令之時，必是富貴之象。失令時，三與四組合，主出入不明理，或有手足有傷，以及有肝、膽之病。 "
+     "combination": 34,
+     "interpretation": "兩木比和 → 利桃花(未拍拖旺正桃花)、精神病、是非爭拗(34劫財)、官非訴訟(34劫財)"
     },
     {
-     "combination": "35",
-     "interpretation": "木克土，有激发急性災病，如流行性病癥。家宅不安、流產。"
+     "combination": 35,
+     "interpretation": "窮途末路再遭殃，損長男、家宅不安、流產"
     },
     {
-     "combination": "36",
-     "interpretation": "主出官貴之人。事業有成。名震遠方。若失令時，金克木，必主有手腳殘傷。"
+     "combination": 36,
+     "interpretation": "金木交戰 → 強勢(6)做事，只求結果，3想出位、6想保守，又要威又要戴頭盔，鍾意以言語欺凌他人 ，大腦短路"
     },
     {
-     "combination": "37",
-     "interpretation": "當元得旺，財源廣進，有文臣而兼武將之權貴。失運時，三與七組合為穿心煞，會有手足及肝膽之病。喜歡破新立舊。"
+     "combination": 37,
+     "interpretation": "震三是非加上兌七口舌 → 主是非(3)、爭吵(7)、財被劫(7)、背義忘恩、長男受傷喜歡破新立舊"
     },
     {
-     "combination": "38",
-     "interpretation": "若三八失令，多主克少男，小口損傷。家中兄弟不和，或因爭財產而惹官司。當元得旺，反出賢良之人，文才出眾。 "
+     "combination": 38,
+     "interpretation": "38先天木，木剋土 → 是非重(3)、朋友多(38為朋)、講是非(3)、坐骨神經痛"
     },
     {
-     "combination": "39",
-     "interpretation": "木火通明，聰明文采；若得當元旺運，必出文章滿腹大學家。雖不當元，也主聰敏之子"
+     "combination": 39,
+     "interpretation": "赤連碧紫，聰明亦刻薄之萌 → 聰明吝嗇，主喜慶、進財、多生貴子、易吸引小人是非(3)、筋骨(3)易紅腫、肝透支、眼紅"
     },
+    null,
     {
-     "combination": "41",
-     "interpretation": "四一同宮，準发科名之顯。一白水主智慧，四綠木主名譽。四一並主桃花，詩酒風流。失令時。必主淫茵。"
+     "combination": 41,
+     "interpretation": "一四同宮，準發科名之顯 → 因智慧(1)而利文昌(4)、名聲(4)、文職(4)、聰明(1)、利桃花(未拍拖旺正桃花)、找工作(from notes)、(from notes)"
     },
     {
-     "combination": "42",
-     "interpretation": "母(2)女(4)不和。婆(2)媳(4)不和。四綠巽主風，二者組合易患神經、中風、慢性腸胃病及呼吸疾病。 "
+     "combination": 42,
+     "interpretation": "木(4)剋土(2) → 室有欺姑之婦(母女不和、婆媳不和)、寅申觸巳，曾聞虎咥家人(被貓狗蛇咬)、山地披風，還生風疾"
     },
     {
-     "combination": "43",
-     "interpretation": "當元得令之時，必是富貴之象。失令時，三與四組合，主出入不明理，或有手足有傷，以及有肝、膽之病。 "
+     "combination": 43,
+     "interpretation": "兩木比和 → 利桃花(未拍拖旺正桃花)、精神病、是非爭拗(34劫財)、官非訴訟(34劫財)"
     },
     {
-     "combination": "44",
-     "interpretation": "文曲雙星齊到，兒女成績優異，喜逢登料。大利文職，頗有聲望。當失令衰氣，四綠木星為風，風性飄苗，四與四組合，主出入漂泊四海，風流不斷，寡婦當家。男兒離家出走。"
+     "combination": 44,
+     "interpretation": "兩木比和 → 利文昌(木)、名聲(木)、聰明(木)"
     },
     {
-     "combination": "45",
-     "interpretation": "當元得令，家業興旺，事業順利。失令時，男兒好飲，無所作為，婦人易生乳病，家境落敗。容易看見靈體(4)、中風"
+     "combination": 45,
+     "interpretation": "五黃病位被陰木剋，皇帝不容反剋自己 → 容易看見靈體(4)、中風"
     },
     {
-     "combination": "46",
-     "interpretation": "主藝術才華出眾，名利雙收，姻結權貴富豪，考試榜首。失元衰時，六白乾金為夫，四綠巽為婦。金克木主喪妻。身敗名裂，犯罪，並有肝膽之病。 "
+     "combination": 46,
+     "interpretation": "主有懸樑之厄，不利長女。煩惱事先合後散(46剋合)、勞碌、難產"
     },
     {
-     "combination": "47",
-     "interpretation": "當元得令，主有權威，必有婦人主政，有出女強人，事業成功。 文昌破體，主不出文秀，功名無望。二木被金克制，易有出傷殘之人、患肝炎之病。"
+     "combination": 47,
+     "interpretation": "金木交戰 → 易口臭體味(4為風)、傷痕(金木交戰)、大腦短路(木主神經)、撞車"
     },
     {
-     "combination": "48",
-     "interpretation": "妻欺少夫，婦奪夫權。"
+     "combination": 48,
+     "interpretation": "風戶見鬼墮胎亡、家運無期、損小口(牙病、小朋友)、易小產、財先得而後破"
     },
     {
-     "combination": "49",
-     "interpretation": "當元得令，家業興旺，出聰明之士，文章振发，有名聲。當失元衰氣，家嫂爭權，婦人不和，易犯桃花之劫，常犯眼疾或有火災之厄。"
+     "combination": 49,
+     "interpretation": "木(4)火(9)通明，主出聰明奇士(49)、進財，但多出寡婦、不正常桃花、先天合金：利用才智解決不斷的困難"
     },
+    null,
     {
-     "combination": "51",
-     "interpretation": "天都殺，五黃為毒素，說明主人易患生殖疾疾病、性病、酒精中毒。不利人丁，甚至有不孕，絕嗣之憂"
+     "combination": 51,
+     "interpretation": "一加二五，傷及壯丁 → 因智慧(1)而容易得罪人(5)，會在朋友前show off、易患腸胃病、腎病、耳疾"
     },
     {
-     "combination": "52",
-     "interpretation": "二黑多主屬脾胃、肌肉发熱。黃腫、昏迷之病。五黃為毒索，易忠腫瘤，二五組合，多是重病死亡之災。"
+     "combination": 52,
+     "interpretation": "二五交加必損主，兩病星相遇 → 主大病(2+5)、癌症、孤寡"
     },
     {
-     "combination": "53",
-     "interpretation": "木克土，有激发急性災病，如流行性病癥。"
+     "combination": 53,
+     "interpretation": "窮途末路再遭殃，損長男、家宅不安、流產"
     },
     {
-     "combination": "54",
-     "interpretation": "當元得令，家業興旺，事業順利。失令時，男兒好飲，無所作為，婦人易生乳病，家境落敗"
+     "combination": 54,
+     "interpretation": "五黃病位被陰木剋，皇帝不容反剋自己 → 容易看見靈體(4)、中風"
     },
     {
-     "combination": "55",
-     "interpretation": "輕則災病，重則有損丁之象。"
+     "combination": 55,
+     "interpretation": "兩重災病星加臨，人口常損，大兇"
     },
     {
-     "combination": "56",
-     "interpretation": "當元得令，頗得錢財。失令時，有患頭部頑疾。同時有服毒自殺之象。"
+     "combination": 56,
+     "interpretation": "六白金星化五黃，當元大吉，富並陶朱。失令父難安，長子痴迷。"
     },
     {
-     "combination": "57",
-     "interpretation": "是指七為兌為弼輔和五黃毒性在一起，出人因男女淫亂無度引起性病、梅毒。七赤金為口，五黃毒生之，亦主吸毒品。 "
+     "combination": 57,
+     "interpretation": "土金相生，當令大進財富、喜事臨門。失令易犯喉疾、病災、劫盜、大破財或有手術事情"
     },
     {
-     "combination": "58",
-     "interpretation": "當元得令，有田莊地產之富，兒女孝順。失令衰弱婦生愚鈍之子；家人多有眼病，或有心悶頭痛。若遇太歲，恐有血光之災。"
+     "combination": 58,
+     "interpretation": "八白當令多進橫財。失令則筋骨有損，不利少男、小口。"
     },
     {
-     "combination": "59",
-     "interpretation": "含義九紫離火，味苦性烈，與五黃毒氣合為毒藥。此二者組合，有吸毒品、服毒、性病、淫亂、火災的含義。"
+     "combination": 59,
+     "interpretation": "紫黃毒藥 → 主青樓染疾(9為桃花)，難產、服毒、傷亡，神智不清、功(9)高蓋主(5)、化療(925)"
     },
+    null,
     {
-     "combination": "61",
-     "interpretation": "得運，金水相生，文章顯達，升官揚名。失運：一白坎水主桃花，失運則淫蕩。六白乾金，乾為天門。同時主出人智慧不用於正道，空思妄想之象。並且易得頭、骨之病"
+     "combination": 61,
+     "interpretation": "金水多情 → 主桃花(1)、聰明(1)、發小財(6)、口才了得(六煞)"
     },
     {
-     "combination": "62",
-     "interpretation": "當運二黑巨門主发土地田莊，坤土生乾金雖進財但孤寒。六與二組合在失運時，主出僧尼或孤男寡婦。"
+     "combination": 62,
+     "interpretation": "陰陽正配(乾坤)，土生金 → 利武官(6)、置業(2)、穩定(老父配老婦)、吝嗇"
     },
     {
-     "combination": "63",
-     "interpretation": "主出官貴之人。事業有成。名震遠方。若失令時，金克木，必主有手腳殘傷。"
+     "combination": 63,
+     "interpretation": "金木交戰 → 強勢(6)做事，只求結果，3想出位、6想保守，又要威又要戴頭盔，鍾意以言語欺凌他人 ，大腦短路"
     },
     {
-     "combination": "64",
-     "interpretation": "主藝術才華出眾，名利雙收，姻結權貴富豪，考試榜首。失元衰時，六白乾金為夫，四綠巽為婦。金克木主喪妻。身敗名裂，犯罪，並有肝膽之病。 "
+     "combination": 64,
+     "interpretation": "主有懸樑之厄，不利長女。煩惱事先合後散(46剋合)、勞碌、難產"
     },
     {
-     "combination": "65",
-     "interpretation": "當元得令，頗得錢財。失令時，有患頭部頑疾。同時有服毒自殺之象。"
+     "combination": 65,
+     "interpretation": "六白金星化五黃，當元大吉，富並陶朱。失令父難安，長子痴迷。"
     },
     {
-     "combination": "66"
+     "combination": 66,
+     "interpretation": "兩金比和 → 發武職(6)、顯權貴(6)"
     },
     {
-     "combination": "67",
-     "interpretation": "當元得令，多出武將，刑官。如果夫運衰弱時，此二星組合，則為交劍劫殺，官場爭執，家庭不和，只有刀劍之傷，車馬之禍。並且易患口疾、頭痛或血光之災。"
+     "combination": 67,
+     "interpretation": "交劍煞 → 女淫(7)、是非爭拗(67劫財)、官非訴訟(67劫財)、夫妻不和(67劫財)、撞車、拗柴"
     },
     {
-     "combination": "68",
-     "interpretation": "金主貴，土主富，此二星組合當元得令，則主富貴雙全，功名利祿齊來，家業興盛，子孫受蔭。"
+     "combination": 68,
+     "interpretation": "土生金 → 利田宅(8)、利財運(6)、旺婚姻嫁娶(from notes)"
     },
     {
-     "combination": "69",
-     "interpretation": "回祿之災(搶自己資源再自己後起爐灶)，破財、為子不孝(對父反叛)、工作有困難、腦病、中風、糖尿病、心臟病、腎病、腸病、頭痛、甩頭髮、和尚\/修行者、因腸胃不好而差"
+     "combination": 69,
+     "interpretation": "回祿之災(搶自己資源再自己後起爐灶) → 破財、為子不孝(對父反叛)、工作有困難、腦病、中風、糖尿病、心臟病、腎病、腸病、頭痛、甩頭髮、和尚\/修行者、因腸胃不好而差"
     },
+    null,
     {
-     "combination": "71",
-     "interpretation": "得運武職升遷，兒女當行桃花之運，酒肉滿盈生活美滿。失令時水冷金寒，兒女貪花戀酒，錢財散流，或背義忘親。"
+     "combination": 71,
+     "interpretation": "金水多情，貪花戀酒 → 出門有利、旅遊、移民"
     },
     {
-     "combination": "72",
-     "interpretation": "生旺主得橫財巨富，出貴女或命卜家。失令則為流產、腹泄之癥"
+     "combination": 72,
+     "interpretation": "二七先天火 → 易受火災、純陰相配，偏桃花"
     },
     {
-     "combination": "73",
-     "interpretation": "當元得旺，財源廣進，有文臣而兼武將之權貴。失運時，三與七組合為穿心煞，會有手足及肝膽之病。喜歡破新立舊。"
+     "combination": 73,
+     "interpretation": "震三是非加上兌七口舌 → 主是非(3)、爭吵(7)、財被劫(7)、背義忘恩、長男受傷喜歡破新立舊"
     },
     {
-     "combination": "74",
-     "interpretation": "當元得令，主有權威，必有婦人主政，有出女強人，事業成功。 文昌破體，主不出文秀，功名無望。二木被金克制，易有出傷殘之人、患肝炎之病。"
+     "combination": 74,
+     "interpretation": "金木交戰 → 易口臭體味(4為風)、傷痕(金木交戰)、大腦短路(木主神經)、撞車"
     },
     {
-     "combination": "75"
+     "combination": 75,
+     "interpretation": "土金相生，當令大進財富、喜事臨門。失令易犯喉疾、病災、劫盜、大破財或有手術事情"
     },
     {
-     "combination": "76",
-     "interpretation": "當元得令，多出武將，刑官。如果夫運衰弱時，此二星組合，則為交劍劫殺，官場爭執，家庭不和，只有刀劍之傷，車馬之禍。並且易患口疾、頭痛或血光之災。"
+     "combination": 76,
+     "interpretation": "交劍煞 → 女淫(7)、是非爭拗(67劫財)、官非訴訟(67劫財)、夫妻不和(67劫財)、撞車、拗柴"
     },
     {
-     "combination": "77",
-     "interpretation": "七七組合得令，主出美女、律師金融界巨子、名嘴(演講家)、改革家。失令，主嫖賭破家萌生，甚至肢體殘傷。同時劫賊入室。扣至桃花之劫。 "
+     "combination": 77,
+     "interpretation": "當令財源大旺、醫卜興家、多生女。失令多是非、口舌、劫盜，生缺唇之子。"
     },
     {
-     "combination": "78",
-     "interpretation": "當元得旺之時，文職武權，財祿兩得，夫妻和睦，兒女安康。失令之時，財產易敗，夫妻成仇，同時男女雖有一拍即合，招手成婚，但亦速冷卻，即同陌路，必有分開。 "
+     "combination": 78,
+     "interpretation": "後天合十五，土生金 → 利財運(8)、旺婚姻嫁娶(艮兌少女少男合)"
     },
     {
-     "combination": "79",
-     "interpretation": "得令，主婚姻喜慶，出美女，以及律師軍事家、改革家、藝術成名之人。"
+     "combination": 79,
+     "interpretation": "九七合轍，常遭回祿之災 → 說話沒氣(火剋金)、喉嚨痛、上氣不接下氣、口腔問題"
     },
+    null,
     {
-     "combination": "81",
-     "interpretation": "艮為鬼門。一白坎為隱伏，此方若陰暗污穢，主得病人易有幻覺(古時以鬼邪作祟比喻)八白艮為小石，一白坎為腎，二數組合多有患尿道結石。八與一組合失令時主出無知、智障之人，得令時主出忠孝，富貴之人。"
+     "combination": 81,
+     "interpretation": "土(8)克水(1) → 易犯耳病、腎臟病、膀胱病"
     },
     {
-     "combination": "82",
-     "interpretation": "多发田產之富。失令，主破財損丁，家出僧道之流(艮坤為生死之門)。"
+     "combination": 82,
+     "interpretation": "後天合十，兩土比和 → 利財運(8)、利田宅(土)、但帶小病(2)，常感不足、現實比較(28皆土)"
     },
     {
-     "combination": "83",
-     "interpretation": "若三八失令，多主克少男，小口損傷。家中兄弟不和，或因爭財產而惹官司。當元得旺，反出賢良之人，文才出眾。 "
+     "combination": 83,
+     "interpretation": "先天木，木剋土 → 是非重(3)、朋友多(38為朋)、講是非(3)、坐骨神經痛"
     },
     {
-     "combination": "84",
-     "interpretation": "妻欺少夫，婦奪夫權。"
+     "combination": 84,
+     "interpretation": "風戶見鬼墮胎亡、家運無期、損小口(牙病、小朋友)、易小產、財先得而後破"
     },
     {
-     "combination": "85",
-     "interpretation": "當元得令，大发財祿，家業安康。當失令衰弱，破財傷筋，小口病厄，運勢破壞。並有腸胃疾病之苦。"
+     "combination": 85,
+     "interpretation": "八白當令多進橫財。失令則筋骨有損，不利少男、小口。"
     },
     {
-     "combination": "86",
-     "interpretation": "金主貴，土主富，此二星組合當元得令，則主富貴雙全，功名利祿齊來，家業興盛，子孫受蔭。"
+     "combination": 86,
+     "interpretation": "土生金 → 利田宅(8)、利財運(6)、旺婚姻嫁娶(from notes)"
     },
     {
-     "combination": "87",
-     "interpretation": "當元得旺之時，文職武權，財祿兩得，夫妻和睦，兒女安康。失令之時，財產易敗，夫妻成仇，同時男女雖有一拍即合，招手成婚，但亦速冷卻，即同陌路，必有分開。 "
+     "combination": 87,
+     "interpretation": "後天合十五，土生金 → 利財運(8)、旺婚姻嫁娶(艮兌少女少男合)"
     },
     {
-     "combination": "88",
-     "interpretation": "當元得令。大利文才學業。大发田莊地產之富，雙喜臨門，事業興旺。當失令衰弱時，家業破敢，並有傷筋骨以及肩骨酸痛之苦。 "
+     "combination": 88,
+     "interpretation": "兩土比和 → 利田宅(8)、利財運(8)、找工作(from notes)"
     },
     {
-     "combination": "89",
-     "interpretation": "當元得旺時，自然大发橫財，富堪敵國。失令衰弱時，火炎土燥，婦生愚子，家人或眼疾並有火災之厄。"
+     "combination": 89,
+     "interpretation": "火生土 → 丁(9) 財(8)兩旺、找工作(from notes)"
     },
+    null,
     {
-     "combination": "91",
-     "interpretation": "水火既濟，合十佳運，主喜慶，謀事順遂。富貴非常，旺人丁。若失令不合局，主婚姻破裂心臟與腎、眼睛有病。"
+     "combination": 91,
+     "interpretation": "後天合十 → 夫婦先吉而後有傷(19剋合)、火暗而神智難清(水剋火)、水火破財主眼疾"
     },
     {
-     "combination": "92",
-     "interpretation": "生旺得令時，文筆生輝，田財巨積。失令時，火被土晦，反主出目疾、心臟病以及婆媳不和燦娌不睦。以及火炎土躁，不長萬物，主出人愚，不生育。"
+     "combination": 92,
+     "interpretation": "火生土 → 多產女(29皆女)、易犯桃花、盲目地幫助他人(2坤)。失令時：不育、寡婦、女同性戀"
     },
     {
-     "combination": "93",
-     "interpretation": "木火通明，聰明文采；若得當元旺運，必出文章滿腹大學家。雖不當元，也主聰敏之子"
+     "combination": 93,
+     "interpretation": "赤連碧紫，聰明亦刻薄之萌 → 聰明吝嗇，主喜慶、進財、多生貴子、易吸引小人是非(3)、筋骨(3)易紅腫、肝透支、眼紅"
     },
     {
-     "combination": "94",
-     "interpretation": "當元得令，家業興旺，出聰明之士，文章振发，有名聲。當失元衰氣，家嫂爭權，婦人不和，易犯桃花之劫，常犯眼疾或有火災之厄。"
+     "combination": 94,
+     "interpretation": "木(4)火(9)通明，主出聰明奇士(49)、進財，但多出寡婦、不正常桃花、先天合金：利用才智解決不斷的困難"
     },
     {
-     "combination": "95",
-     "interpretation": "九紫離火，味苦性烈，與五黃毒氣合為毒藥。此二者組合，有吸毒品、服毒、性病、淫亂、火災的含義。"
+     "combination": 95,
+     "interpretation": "紫黃毒藥 → 主青樓染疾(9為桃花)，難產、服毒、傷亡，神智不清、功(9)高蓋主(5)、化療(925)"
     },
     {
-     "combination": "96",
-     "interpretation": "回祿之災(搶自己資源再自己後起爐灶)，破財、為子不孝(對父反叛)、工作有困難、腦病、中風、糖尿病、心臟病、腎病、腸病、頭痛、甩頭髮、和尚\/修行者、因腸胃不好而差"
+     "combination": 96,
+     "interpretation": "回祿之災(搶自己資源再自己後起爐灶) → 破財、為子不孝(對父反叛)、工作有困難、腦病、中風、糖尿病、心臟病、腎病、腸病、頭痛、甩頭髮、和尚\/修行者、因腸胃不好而差"
     },
     {
-     "combination": "97",
-     "interpretation": "得令，主婚姻喜慶，出美女，以及律師軍事家、改革家、藝術成名之人。火剋金，說話沒氣、喉嚨痛、上氣不接下氣、口腔問題"
+     "combination": 97,
+     "interpretation": "九七合轍，常遭回祿之災 → 說話沒氣(火剋金)、喉嚨痛、上氣不接下氣、口腔問題"
     },
     {
-     "combination": "98",
-     "interpretation": "當元得旺時，自然大发橫財，富堪敵國。失令衰弱時，火炎土燥，婦生愚子，家人或眼疾並有火災之厄。"
+     "combination": 98,
+     "interpretation": "火生土 → 丁(9) 財(8)兩旺、利田宅(8)、找工作(from notes)"
     },
     {
-     "combination": "99",
-     "interpretation": "當元得旺主即刻发福，文章顯達，名傳四誨。失令衰弱，婦多產女兒，男女好色，家中易出眼疾瞎目之人。 "
+     "combination": 99,
+     "interpretation": "兩火比和 → 主喜慶(9)、發文貴(9)"
     }
    ]
