@@ -503,13 +503,13 @@ document.getElementById('phoneNumber').addEventListener('input', function () {
     </div>
   `;
 
-  // 根據螢幕寬度設定表格寬度
-  window.addEventListener('resize', function() {
-    const table = document.querySelector('.table-responsive-nineStar');
-    const tableWidth = '650px'; // Fixed width of the table
+  // // 根據螢幕寬度設定表格寬度
+  // window.addEventListener('resize', function() {
+  //   const table = document.querySelector('.table-responsive-nineStar');
+  //   const tableWidth = '650px'; // Fixed width of the table
     
-    table.style.width = tableWidth;
-  });
+  //   table.style.width = tableWidth;
+  // });
 
 });
 

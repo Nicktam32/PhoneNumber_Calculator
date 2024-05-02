@@ -15,7 +15,7 @@ function generateAddOns() {
       femaleButton.onclick = () => handleGender('female', sum);
   
       const resultSpan = document.createElement('span');
-      resultSpan.style.marginLeft = '10px';
+      resultSpan.style.marginLeft = '8px';
   
       bornYearInput.parentNode.insertBefore(resultSpan, bornYearInput.nextSibling);
       resultSpan.appendChild(maleButton);
