@@ -58,7 +58,7 @@ specialCombinations = [
     },
     {
      "combination": 26,
-     "interpretation": "陰陽正配(乾坤)，土生金 → 利武官(6)、置業(2)、穩定(老父配老婦)、吝嗇"
+     "interpretation": "陰陽正配(乾坤天地定位)，土生金 → 利武官(6)、置業(2)、穩定(老父配老婦)、吝嗇"
     },
     {
      "combination": 27,
@@ -87,7 +87,7 @@ specialCombinations = [
     },
     {
      "combination": 34,
-     "interpretation": "兩木比和 → 利桃花(未拍拖旺正桃花)、精神病、是非爭拗(34劫財)、官非訴訟(34劫財)"
+     "interpretation": "兩木比和 → 未拍拖旺正桃花(雷風相薄)、精神病、是非爭拗(34劫財)、官非訴訟(34劫財)"
     },
     {
      "combination": 35,
@@ -120,7 +120,7 @@ specialCombinations = [
     },
     {
      "combination": 43,
-     "interpretation": "兩木比和 → 利桃花(未拍拖旺正桃花)、精神病、是非爭拗(34劫財)、官非訴訟(34劫財)"
+     "interpretation": "兩木比和 → 未拍拖旺正桃花(雷風相薄)、精神病、是非爭拗(34劫財)、官非訴訟(34劫財)"
     },
     {
      "combination": 44,
@@ -190,7 +190,7 @@ specialCombinations = [
     },
     {
      "combination": 62,
-     "interpretation": "陰陽正配(乾坤)，土生金 → 利武官(6)、置業(2)、穩定(老父配老婦)、吝嗇"
+     "interpretation": "陰陽正配(乾坤天地定位)，土生金 → 利武官(6)、置業(2)、穩定(老父配老婦)、吝嗇"
     },
     {
      "combination": 63,
@@ -251,7 +251,7 @@ specialCombinations = [
     },
     {
      "combination": 78,
-     "interpretation": "後天合十五，土生金 → 利財運(8)、旺婚姻嫁娶(艮兌少女少男合)"
+     "interpretation": "後天合十五，土生金 → 利財運(8)、旺婚姻嫁娶(山澤通氣，艮兌少女少男合)"
     },
     {
      "combination": 79,
@@ -284,7 +284,7 @@ specialCombinations = [
     },
     {
      "combination": 87,
-     "interpretation": "後天合十五，土生金 → 利財運(8)、旺婚姻嫁娶(艮兌少女少男合)"
+     "interpretation": "後天合十五，土生金 → 利財運(8)、旺婚姻嫁娶(山澤通氣，艮兌少女少男合)"
     },
     {
      "combination": 88,
